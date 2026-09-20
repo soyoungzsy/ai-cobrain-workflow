@@ -1,0 +1,7 @@
+interface:
+  display_name: "AI 共脑工作流"
+  short_description: "把零散Todo变成人、AI与协作者共同推进的闭环"
+  default_prompt: "Use $ai-cobrain to turn my current tasks into today's co-brain workbench and complete the safe AI-owned work."
+policy:
+  allow_implicit_invocation: true
+

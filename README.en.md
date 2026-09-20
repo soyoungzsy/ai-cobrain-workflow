@@ -12,7 +12,36 @@ AI Co-Brain Workflow is a tool-agnostic, local-first method for people handling 
 
 This repository contains documentation, prompts, templates, and fictional examples. It does **not** connect to your inbox, calendar, chat, or task manager, and it does not claim proven productivity gains for every user.
 
-[中文说明](README.md) · [Quick start](docs/quickstart.md) · [Core prompt](prompts/cobrain-secretary.md) · [Privacy](docs/privacy-and-security.md)
+[中文说明](README.md) · [Install Skill](skills/ai-cobrain/SKILL.md) · [Quick start](docs/quickstart.md) · [Fallback prompt](prompts/cobrain-secretary.md) · [Privacy](docs/privacy-and-security.md)
+
+## Install the Skill
+
+The core reusable asset is the [`ai-cobrain`](skills/ai-cobrain/SKILL.md) Skill. It requires no private plugin or organization-specific system.
+
+### Codex
+
+```bash
+git clone https://github.com/soyoungzsy/ai-cobrain-workflow.git
+mkdir -p ~/.codex/skills
+cp -R ai-cobrain-workflow/skills/ai-cobrain ~/.codex/skills/
+```
+
+### Claude Code
+
+```bash
+git clone https://github.com/soyoungzsy/ai-cobrain-workflow.git
+mkdir -p ~/.claude/skills
+cp -R ai-cobrain-workflow/skills/ai-cobrain ~/.claude/skills/
+```
+
+Restart the client, then say:
+
+```text
+Use $ai-cobrain to turn the following items into today's three outcomes
+and complete the safe AI-owned work now.
+```
+
+Use the [fallback prompt](prompts/cobrain-secretary.md) only when Skill installation is unavailable.
 
 ## Why another workflow?
 
@@ -65,7 +94,7 @@ This is a coordination aid, not an employee-surveillance system. Do not infer ef
 | Human gates | AI guessing owners, deadlines, or high-risk decisions |
 | Daily calibration | A static prompt that never learns your judgment |
 
-## Five-minute start
+## Fallback without Skill installation
 
 1. Copy [`prompts/cobrain-secretary.md`](prompts/cobrain-secretary.md) into your AI assistant.
 2. Paste a small, sanitized set of tasks from the last one to three days.
@@ -90,6 +119,12 @@ ai-cobrain-workflow/
 │   └── fictional-workday.md
 ├── prompts/
 │   └── cobrain-secretary.md
+├── skills/
+│   └── ai-cobrain/
+│       ├── SKILL.md
+│       ├── agents/openai.yaml
+│       ├── assets/daily-workbench.md
+│       └── references/task-model.md
 └── templates/
     ├── daily-workbench.md
     └── task-ledger.md
@@ -97,7 +132,7 @@ ai-cobrain-workflow/
 
 ## Maturity
 
-`v0.1.0` is a documentation-first release. The method has been used in real knowledge-work routines, but this public package has not yet been validated across many independent users. Treat it as a starter kit, not a universal productivity claim.
+`v0.2.0` includes an installable Skill, a fallback prompt, a task model, and templates. The method has been used in real knowledge-work routines, but this public package has not yet been validated across many independent users. Treat it as a starter kit, not a universal productivity claim.
 
 ## License
 

@@ -1,5 +1,19 @@
 # Quick Start
 
+## Recommended: install the Skill
+
+For Codex:
+
+```bash
+git clone https://github.com/soyoungzsy/ai-cobrain-workflow.git
+mkdir -p ~/.codex/skills
+cp -R ai-cobrain-workflow/skills/ai-cobrain ~/.codex/skills/
+```
+
+Restart Codex and invoke `$ai-cobrain`. The Skill will generate the workbench and directly complete safe AI-owned drafting, organization, comparison, and checking work.
+
+The remaining steps describe the no-install fallback.
+
 ## Before you begin
 
 Use a small, sanitized sample. Do not paste confidential messages, personal data, credentials, internal links, or unreleased business information into an AI service unless your organization explicitly allows it.
@@ -15,7 +29,7 @@ Collect tasks from one project or the last one to three days. Plain text is enou
 - Compare three public research tools and summarize trade-offs.
 ```
 
-## Step 2 — Run the prompt
+## Step 2 — Run the fallback prompt
 
 Copy [`prompts/cobrain-secretary.md`](../prompts/cobrain-secretary.md), append the raw input, and send it to your AI assistant.
 

@@ -12,7 +12,36 @@ AI 共脑工作流面向同时处理多个项目的知识工作者。它帮助 A
 
 本仓库只包含通用方法、Prompt、模板和完全虚构的示例，不连接任何企业系统，不含真实工作数据，也不宣称对所有用户都已经产生确定的效率提升。
 
-[English](README.en.md) · [5分钟上手](docs/quickstart.md) · [共脑秘书Prompt](prompts/cobrain-secretary.md) · [隐私与安全](docs/privacy-and-security.md)
+[English](README.en.md) · [安装Skill](skills/ai-cobrain/SKILL.md) · [5分钟上手](docs/quickstart.md) · [备用Prompt](prompts/cobrain-secretary.md) · [隐私与安全](docs/privacy-and-security.md)
+
+## 直接安装 Skill
+
+仓库的核心资产是 [`ai-cobrain`](skills/ai-cobrain/SKILL.md) Skill。它不依赖公司插件、私有系统或特定任务软件。
+
+### Codex
+
+```bash
+git clone https://github.com/soyoungzsy/ai-cobrain-workflow.git
+mkdir -p ~/.codex/skills
+cp -R ai-cobrain-workflow/skills/ai-cobrain ~/.codex/skills/
+```
+
+### Claude Code
+
+```bash
+git clone https://github.com/soyoungzsy/ai-cobrain-workflow.git
+mkdir -p ~/.claude/skills
+cp -R ai-cobrain-workflow/skills/ai-cobrain ~/.claude/skills/
+```
+
+安装后重新打开客户端，然后直接说：
+
+```text
+用 $ai-cobrain 整理下面这些事项，给出今天三个关键结果，
+并直接完成 AI 可以处理的部分。
+```
+
+没有安装条件时，再使用仓库中的[备用Prompt](prompts/cobrain-secretary.md)。
 
 ## 为什么普通 Todo 不够
 
@@ -37,7 +66,7 @@ AI 共脑工作流把任务看作一个**持续变化的交接状态**，而非�
 | 人工确认门 | AI猜测Owner、时间和高风险决策 |
 | 每日校准规则 | Prompt长期不理解你的判断习惯 |
 
-## 五分钟开始
+## 不安装 Skill 的备用方式
 
 1. 把 [`prompts/cobrain-secretary.md`](prompts/cobrain-secretary.md) 整段复制给你的 AI；
 2. 只粘贴最近一至三天、一个项目范围内的脱敏任务；
@@ -67,7 +96,7 @@ AI 负责整理和降噪，正式优先级、责任人和任务布置仍由管�
 
 ## 项目成熟度
 
-`v0.1.0` 是文档优先版本。方法来自真实工作实践，但公开版本还没有经过大量独立用户验证。请把它视为可试跑的起点，不要把它当作普适生产力结论。
+`v0.2.0` 已提供可安装 Skill、Prompt、任务模型与模板。方法来自真实工作实践，但公开版本还没有经过大量独立用户验证。请把它视为可试跑的起点，不要把它当作普适生产力结论。
 
 ## 许可证
 
@@ -81,3 +110,4 @@ MIT，详见 [LICENSE](LICENSE)。
 ## 修改记录
 
 - 2026-09-19：创建可公开的中文首版说明。
+- 2026-09-20：增加可直接安装的`ai-cobrain` Skill，并将Prompt调整为备用入口。
