@@ -1,4 +1,26 @@
-# AI Co-Brain Workflow
+# Soya AI Co-Brain Workflow
+
+**Turn a crowded task list into today’s priorities, with a next person, a revisit time and a clear finish condition.**
+
+## Start without coding
+
+A **Skill** is a package of instructions that helps an AI follow repeatable steps. A **prompt** is a message you can copy into an AI chat. Try the message below before installing anything.
+
+1. Open the AI chat you normally use and start a new conversation.
+2. Copy the complete message below and replace the bracketed example with information you are allowed to share.
+3. Compare the reply with the expected result. Missing information should lead to questions, not invented facts.
+
+```text
+Organize these personal tasks: [submit a reading summary on Friday; wait for a friend to confirm the weekend plan; organize three notes today]. Suggest at most three priorities, who takes the next step, when to revisit each task and what completion looks like. Suggest only; do not send messages or change external systems.
+```
+
+**Expected result:** Expect priorities with a next person, revisit time and clear finish condition. You can adjust the suggestions.
+
+Your AI service may charge fees and handles the text under its own policies. Do not paste work secrets, private contact details or passwords. If a reply is incomplete, name the missing part and add non-sensitive context. You can stop at any time.
+
+The installation and developer sections below are optional for this first try. For questions, use the repository’s **Issues** tab, the public question area, and remove private/work information before posting.
+
+
 
 By <span class="notranslate" translate="no">Soya</span>
 
@@ -13,6 +35,10 @@ AI Co-Brain Workflow is a tool-agnostic, local-first method for people handling 
 This repository contains documentation, prompts, templates, and fictional examples. It does **not** connect to your inbox, calendar, chat, or task manager, and it does not claim proven productivity gains for every user.
 
 [中文说明](README.md) · [Install Skill](skills/ai-cobrain/SKILL.md) · [Quick start](docs/quickstart.md) · [Fallback prompt](prompts/cobrain-secretary.md) · [Privacy](docs/privacy-and-security.md)
+
+## No-command first try
+
+Open the [fallback prompt](prompts/cobrain-secretary.md), copy its full text into your AI and add three sanitized personal tasks. Expect up to three outcomes with a next actor, trigger and completion evidence. No external assignment or message is sent automatically.
 
 ## Install the Skill
 
@@ -137,3 +163,7 @@ ai-cobrain-workflow/
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
+
+
+Verify installation locations against current host documentation; a legacy location is not universal support. Back up namesake Skill directories and outputs before updating. Uninstall only the Skill, not task ledgers. See [maintenance](MAINTENANCE.md) for version/recovery status.
