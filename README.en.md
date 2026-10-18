@@ -158,7 +158,7 @@ ai-cobrain-workflow/
 
 ## Maturity
 
-`v0.2.0` includes an installable Skill, a fallback prompt, a task model, and templates. The method has been used in real knowledge-work routines, but this public package has not yet been validated across many independent users. Treat it as a starter kit, not a universal productivity claim.
+`v0.2.1` includes an installable Skill, a fallback prompt, a task model, and templates. The method has been used in real knowledge-work routines, but this public package has not yet been validated across many independent users. Treat it as a starter kit, not a universal productivity claim.
 
 ## License
 
@@ -167,3 +167,9 @@ MIT. See [LICENSE](LICENSE).
 
 
 Verify installation locations against current host documentation; a legacy location is not universal support. Back up namesake Skill directories and outputs before updating. Uninstall only the Skill, not task ledgers. See [maintenance](MAINTENANCE.md) for version/recovery status.
+
+## Sources and acknowledgements
+
+See [sources](SOURCES.md) for original authors, references, dependencies and licenses. AI rewriting does not establish original authorship; required third-party notices remain in applicable downloads.
+
+Version: 0.2.1 · [Release / 固定下载](https://github.com/soyoungzsy/ai-cobrain-workflow/releases/tag/v0.2.1)

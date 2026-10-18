@@ -1,3 +1,19 @@
+# Soya 规范修复与发布检查
+
+## 0.2.1 候选检查 · 2026-10-18
+
+补来源说明、固定版本、无安装完整指令与第一次使用的预期结果。
+
+实际执行：Skill格式和文件链接检查通过，完整指令可从README复制；AI对合成待办实际整理形成最多三个重点、下一步、再看时间与完成标准。
+
+中英入口按首次接触、不会编程的读者检查用途、第一步、具体输入、预期结果、费用、数据和退出/恢复。已核实的上游作者与许可证保留，不能将灵感说成代码改造。
+
+本节是发布前记录。实际公开、固定版本下载与文件核对必须在发布后追加，不能把本节当作已发布或全部验收证明。真实独立用户测试、跨AI工具的安装发现、真实付费服务联调未因本轮文字或离线测试自动通过；各项目不适用项按公开功能范围说明。全历史隐私的待处理事项另行记录，不作绝对安全保证。
+
+English: Candidate checks cover plain-language onboarding, actual applicable tests, sources and required notices. Publication, actual downloads and file equality must be verified afterward. AI self-review is not independent user testing; unexecuted installation and paid-service integration are not claimed. Historical privacy questions remain separate from current-file checks.
+
+## 以往记录（按当时状态保留）
+
 # Soya 开源规范检查记录
 
 ## 公开更新后的首次读者复查 · 2026-10-18
